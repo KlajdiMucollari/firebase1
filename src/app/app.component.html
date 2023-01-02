@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row justify-content-center p-2">
+    <h1>Save data to Firebase</h1>
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" [(ngModel)]="employeeName" placeholder="Enter name">
+  </div>
+  <div class="form-group">
+    <input type="number" class="form-control" [(ngModel)]="employeeAge" placeholder="Enter age">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" [(ngModel)]="employeeAdress" placeholder="Enter adress">
+  </div>
+  <div class="form-group">
+    <button class="btn btn-primary" (click)="CreateRecord()" [disabled]="!employeeName || !employeeAge || !employeeAdress">Create data</button>
+  </div>
+  <div class="form-group">
+    <h4 >{{message}}</h4>
+  </div>
+</div>
